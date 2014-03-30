@@ -13,6 +13,14 @@ Explain what each of the following lines does. Use the terminology you learned f
 
 Answer:
 
+1. This imports everything under TurtleWorld. The use of * includes everything under a directory.
+
+2. This sets world to an instance of TurtleWorld
+
+
+3. Sets bob to be an instance of Turtle
+
+4. Waits for the user to do do something. 
 
 
 
@@ -22,13 +30,20 @@ These questions pertain to the program you wrote in Week0.
 
 -- What are the arguments of polygon()?  What type is each argument?
 Answer:
+Turt, lengthturt, and n.
+
+Turt takes a turtle
+Lengthturt takes an integer.
+n takes an integer.
 
 -- What two turtle functions did you use to draw the sides of the polygon?
 Answer:
 
+I used fd and lt. 
+
 -- What are the arguments for polyline?  What type is each argument?
 Answer:
-
+polyline takes t (of type turtle), n (of type integer), length (of type integer), and angle (of type float).
 
 
 
@@ -38,8 +53,14 @@ Suppose you wrote a function, center_circle(), that draws a circle of a given ra
 -- What turtle functions would you use to move the turtle from the center to the edge of the circle and get ready to call the original circle() function?
 Answer:
 
+
+I would use FD to move the turtle to the location of the circumference and then I would use lt(t, 90.0) to have it face the direction of circumference.
+
 -- Suppose the interface of this function requires the turtle to end up in the same place it started, facing in the same direction it started.
 Answer:
+When it was done drawing the circle I would have the turtle LT(90) and then I would have it move forward by the radius. I would then have it LT 180 to be facing the direction it originally started.
+
 
 -- What is this type of requirement called?
 Answer:
+This is a postcondition requirement
